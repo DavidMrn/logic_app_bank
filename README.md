@@ -2,7 +2,7 @@
 Este repositorio es acerca de una app hecha con Spring Boot en clases de Lógica para la solución de problemas, dictada por el profesor [Daniel Felipe Agudelo Molina](https://github.com/DanielDev87)
 
 
-# ⚠️ Adventencía.
+# ⚠️ Advertencía.
 Antes de instalar o ejecutar.
 Necesitas descargar e instalar ciertos programás para su correcto funcionamiento.
 
@@ -60,7 +60,7 @@ Para obtener datos en este caso lo único que tendrás que hacer es cambiar **PO
 
 # Todas las rutas de la App.
 
-## Customers
+## 👨‍🦲 Customers
 
 `localhost:8080/api/bank/customers` > Consultas o creas un cliente dependiendo del metodo usado (GET) sin especificar **Id** mostrará todos los clientes.
 
@@ -68,7 +68,7 @@ Para obtener datos en este caso lo único que tendrás que hacer es cambiar **PO
 
 (IMAGEN DE GetAllCustomers.png) 
 
-## Accounts.
+## 🪪 Accounts.
 
 `localhost:8080/api/bank/customers/1/accounts` > Crear una cuenta bancaria de tipo **SAVINGS** o **CHECKING** asociada a un cliente en este caso el cliente con Id:**1**
 
@@ -104,3 +104,8 @@ Esto soltará un valor `true` en caso de que si deposite y `false` en caso de qu
 (IMAGEN DE WithdrawImage.png)
 
 
+`localhost:8080/api/bank/accounts/Ac1/transfer` > Transfiere dinero. En este caso va a transferir de la cuenta con Id: **Ac1** a la cuenta "Ac2". 
+
+(IMAGEN DE TransferImage.png)
+
+## 💸 Transactions
