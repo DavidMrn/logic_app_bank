@@ -2,7 +2,7 @@
 Este repositorio es acerca de una app hecha con Spring Boot en clases de Lógica para la solución de problemas, dictada por el profesor [Daniel Felipe Agudelo Molina](https://github.com/DanielDev87)
 
 
-# ⚠️ Advertencía.
+## ⚠️ Advertencía.
 Antes de instalar o ejecutar.
 Necesitas descargar e instalar ciertos programás para su correcto funcionamiento.
 
@@ -11,6 +11,7 @@ Necesitas descargar e instalar ciertos programás para su correcto funcionamient
 - [Visual Studio Code ](https://code.visualstudio.com/)
 
 📦 **Extensiones**
+
 Dentro de Visual Studio Code puedes instalar extensiones que serán necesarias para su funcionamiento. 
 Para acceder al menu presiona Crtl + Shift + X (El atajo por defecto).
 - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
@@ -24,14 +25,17 @@ Para acceder al menu presiona Crtl + Shift + X (El atajo por defecto).
 
 ❗ Aviso: Es recomendable en el **File Manager o el explorador de archivos** seleccionar **JAVA PROJECTS** al instalar el plugin [Extension Pack For Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) verás como se crea.
 
-**INSERTAR IMAGEN DE EL FILE MANAGER**
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/ExplorerImage.png" alt="Explorer" width="20%"/>
 
 3. Una vez tus archivos se vean de esa manera, podrás ejecutar Spring Boot de la siguiente manera: Verás que se creó un icono en forma de rombo con símbolo de encendido 
 <img src="docs/images/encendido.png" alt="Encendido" width="30" style="vertical-align:middle;" />, click y entras a su menú, acto seguido ejecutas con el símbolo de dos flechas.
 
-   3.1 Otra forma es irte a **appbank>src/main/java>com.logsoluprobl.appbank>AppBankApplication** Y al abrir el archivo arriba a la derecha verás también una fleca para ejecutar. (F5 - Atajo por defecto)
+   3.1 Otra forma es irte a **appbank > src/main/java > com.logsoluprobl.appbank > AppBankApplication** Y al abrir el archivo arriba a la derecha verás también una flecha para ejecutar. (F5 - Atajo por defecto)
 
 4. Una vez ejecutado veras en la terminal "SPRING" en ASCII Art. Puedes probar en tu navegador escribir *htpp:localhost:8080/* Si ves **Whitelabel Error Page** no te preocupes, es normal. Es una página para verificar su arranque en caso de no encontrar ruta.
+
+En caso de que no sea 8080 el puerto y no conecte. En la terminal donde aparece el ASCII Art te dirá en que puerto se inicializó.
+
 
 6. Para solucionar ese error, puedes leer el codigo de **BankController** y ver que rutas existen.
    Ten encuenta que todas inician con **/api/bank** y continuan respectivamente con lo que desees (Siempre que esté en el codigo).
@@ -60,7 +64,14 @@ Para obtener datos en este caso lo único que tendrás que hacer es cambiar **PO
 
 # Todas las rutas de la App.
 
-##👨‍🦲 Customers
+⚠️ Importante.
+
+Puedes, para no hacer todos los metodos en una sola **Request**, duplicar o crear una nueva y cambiarle el nombre. Te quedará algo así.
+
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/RequestMethodsImage.png" style="width:20%;" alt="RequestMethodsImage">
+
+
+## 👨‍🦲 Customers
 
 `localhost:8080/api/bank/customers` > Consultas o creas un cliente dependiendo del método usado (GET). Sin especificar Id mostrará todos los clientes.
 
@@ -110,3 +121,10 @@ Esto devuelve true si se depositó correctamente, false si no.
 
 <img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/TransactionsImage.png" style="width:20%;" alt="TrasactionsImage">
 
+`localhost:8080/api/bank/accounts/Ac3/apply-interest` > Aplica interes a una cuenta por Id. En este caso **Ac3**. Devuelve HttpStatus como OK 200 en caso de ser aplicable.
+
+---
+
+`localhost:8080/api/bank/customers/2/accounts` > Obtiene todas las cuentas de un cliente por su id. En este caso: **2**
+
+**❗Todas estas rutas se pueden copiar y visualizar en el navegador después de ejecutarlas en Thunder Client**
