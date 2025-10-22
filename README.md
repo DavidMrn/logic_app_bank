@@ -60,52 +60,46 @@ Para obtener datos en este caso lo único que tendrás que hacer es cambiar **PO
 
 # Todas las rutas de la App.
 
-## 👨‍🦲 Customers
+##👨‍🦲 Customers
 
-`localhost:8080/api/bank/customers` > Consultas o creas un cliente dependiendo del metodo usado (GET) sin especificar **Id** mostrará todos los clientes.
+`localhost:8080/api/bank/customers` > Consultas o creas un cliente dependiendo del método usado (GET). Sin especificar Id mostrará todos los clientes.
 
-`localhost:8080/api/bank/customers/id` > Consultas un cliente con su id
+`localhost:8080/api/bank/customers/id` > Consulta un cliente con su id.
 
-(IMAGEN DE GetAllCustomers.png) 
+<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/GetAllCustomers.png" style="width:80%;" alt="GetAllCustomers">
+🪪 Accounts
 
-## 🪪 Accounts.
-
-`localhost:8080/api/bank/customers/1/accounts` > Crear una cuenta bancaria de tipo **SAVINGS** o **CHECKING** asociada a un cliente en este caso el cliente con Id:**1**
+`localhost:8080/api/bank/customers/1/accounts` > Crear una cuenta bancaria de tipo SAVINGS o CHECKING asociada a un cliente (cliente con Id: 1).
 
 Para Savings: parameter se interpreta como tasa de interés (interestRate).
-
 Para Checking: parameter se interpreta como límite de sobregiro (overdraftLimit).
 
 Ejemplo JSON:
 
 {
-  "type": "SAVINGS",
-  "accountId": "Ac1",
-  "parameter": 0.05
+"type": "SAVINGS",
+"accountId": "Ac1",
+"parameter": 0.05
 }
 
-(IMAGEN DE CreateAccount.png)
+<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/CreateAccount.png" style="width:80%;" alt="CreateAccount">
 
-`localhost:8080/api/bank/accounts/Ac2` > Consulta cuentas por id, en este caso "Ac2" o el valor que tu le agregues.
+`localhost:8080/api/bank/accounts/Ac2` > Consulta cuentas por id, en este caso "Ac2" o el valor que le agregues.
+Esta cuenta está asociada al cliente 2.
 
-En este caso esta cuenta está asociada al cliente 2.
+<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/AccountById.png" style="width:80%;" alt="AccountById">
 
-(IMAGEN CON LA PRUEBA DE AccountById.png)
+`localhost:8080/api/bank/accounts/Ac1/deposit?amount=5000` > Deposita dinero a la cuenta con Id: Ac1 y cantidad 5000.
+Esto devuelve true si se depositó correctamente, false si no.
 
+<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/DepositImage.png" style="width:80%;" alt="DepositImage">
 
-`localhost:8080/api/bank/accounts/Ac1/deposit?amount=5000` > Deposita dinero a la cuenta con Id: **Ac1** y cantidad 5000 (Prueba a cambiar estos valores y con GET (Anterior metodo) mirar el cámbio.
+`localhost:8080/api/bank/accounts/Ac1/withdraw?amount=2500` > Retira dinero de la cuenta con Id: Ac1 y cantidad 2500.
 
-Esto soltará un valor `true` en caso de que si deposite y `false` en caso de que no deposite.
+<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/WithdrawImage.png" style="width:80%;" alt="WithdrawImage">
 
-(IMAGEN DE DepositImage.png)
+`localhost:8080/api/bank/accounts/Ac1/transfer` > Transfiere dinero de la cuenta con Id: Ac1 a otra cuenta (por ejemplo, "Ac2").
 
-`localhost:8080/api/bank/accounts/Ac1/withdraw?amount=2500` > Retira dinero a la cuenta con Id: **Ac1** y cantidad 2500.
-
-(IMAGEN DE WithdrawImage.png)
-
-
-`localhost:8080/api/bank/accounts/Ac1/transfer` > Transfiere dinero. En este caso va a transferir de la cuenta con Id: **Ac1** a la cuenta "Ac2". 
-
-(IMAGEN DE TransferImage.png)
+<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/TransferImage.png" style="width:80%;" alt="TransferImage">
 
 ## 💸 Transactions
