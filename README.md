@@ -66,7 +66,7 @@ Para obtener datos en este caso lo único que tendrás que hacer es cambiar **PO
 
 `localhost:8080/api/bank/customers/id` > Consulta un cliente con su id.
 
-<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/GetAllCustomers.png" style="width:80%;" alt="GetAllCustomers">
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/GetAllCustomers.png" style="width:20%;" alt="GetAllCustomers">
 🪪 Accounts
 
 `localhost:8080/api/bank/customers/1/accounts` > Crear una cuenta bancaria de tipo SAVINGS o CHECKING asociada a un cliente (cliente con Id: 1).
@@ -82,24 +82,24 @@ Ejemplo JSON:
 "parameter": 0.05
 }
 
-<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/CreateAccount.png" style="width:80%;" alt="CreateAccount">
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/CreateAccount.png" style="width:20%;" alt="CreateAccount">
 
 `localhost:8080/api/bank/accounts/Ac2` > Consulta cuentas por id, en este caso "Ac2" o el valor que le agregues.
 Esta cuenta está asociada al cliente 2.
 
-<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/AccountById.png" style="width:80%;" alt="AccountById">
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/AccountById.png" style="width:20%;" alt="AccountById">
 
 `localhost:8080/api/bank/accounts/Ac1/deposit?amount=5000` > Deposita dinero a la cuenta con Id: Ac1 y cantidad 5000.
 Esto devuelve true si se depositó correctamente, false si no.
 
-<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/DepositImage.png" style="width:80%;" alt="DepositImage">
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/DepositImage.png" style="width:20%;" alt="DepositImage">
 
 `localhost:8080/api/bank/accounts/Ac1/withdraw?amount=2500` > Retira dinero de la cuenta con Id: Ac1 y cantidad 2500.
 
-<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/WithdrawImage.png" style="width:80%;" alt="WithdrawImage">
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/WithdrawImage.png" style="width:20%;" alt="WithdrawImage">
 
 `localhost:8080/api/bank/accounts/Ac1/transfer` > Transfiere dinero de la cuenta con Id: Ac1 a otra cuenta (por ejemplo, "Ac2").
 
-<img src="https://github.com/DavidMrn/logic_app_bank/raw/main/docs/TransferImage.png" style="width:80%;" alt="TransferImage">
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/TransferImage.png" style="width:20%;" alt="TransferImage">
 
 ## 💸 Transactions
