@@ -67,7 +67,9 @@ Para obtener datos en este caso lo único que tendrás que hacer es cambiar **PO
 `localhost:8080/api/bank/customers/id` > Consulta un cliente con su id.
 
 <img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/GetAllCustomers.png" style="width:20%;" alt="GetAllCustomers">
-🪪 Accounts
+
+
+## 🪪 Accounts
 
 `localhost:8080/api/bank/customers/1/accounts` > Crear una cuenta bancaria de tipo SAVINGS o CHECKING asociada a un cliente (cliente con Id: 1).
 
@@ -103,3 +105,8 @@ Esto devuelve true si se depositó correctamente, false si no.
 <img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/TransferImage.png" style="width:20%;" alt="TransferImage">
 
 ## 💸 Transactions
+
+`localhost:8080/api/bank/accounts/Ac1/transactions` > Muestra todas las transaciones de una cuenta con Id en este caso: **Ac1**
+
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/TransactionsImage.png" style="width:20%;" alt="TrasactionsImage">
+
