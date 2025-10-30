@@ -128,3 +128,24 @@ Esto devuelve true si se depositó correctamente, false si no.
 `localhost:8080/api/bank/customers/2/accounts` > Obtiene todas las cuentas de un cliente por su id. En este caso: **2**
 
 **❗Todas estas rutas se pueden copiar y visualizar en el navegador después de ejecutarlas en Thunder Client**
+
+
+# ❇️ Swagger UI
+Nos va a permitir ver de una forma más visual todos los metodos que esta aplicación contiene.
+Para verlo tienes que irte a http://localhost:8080/swagger-ui/index.html
+
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/swaggeruimain.png" style="width:30%;" alt="TrasactionsImage">
+
+Para usar los metodos desde Swaagger UI tendrás que darle click y a continuación: al botón *Try it out*
+   > Recordatorio: Hay metodos que dependen de otros para dar respuesta, como lo son el obtener clientes, sin clientes anteriormente creados este da error.
+
+En este ejemplo se realiza con crear cliente y después obtener cliente por id.
+Le damos los valores también en Json y executamos.
+
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/createacustomerswagger.png" style="width:30%;" alt="TrasactionsImage">
+
+Obteniendo por ID: 
+
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/getcustomerbyidswagger.png" style="width:30%;" alt="TrasactionsImage">
+
+Y así con los demás metodos, como crear cuenta. 
