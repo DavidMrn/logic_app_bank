@@ -149,3 +149,26 @@ Obteniendo por ID:
 <img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/getcustomerbyidswagger.png" style="width:30%;" alt="TrasactionsImage">
 
 Y así con los demás metodos, como crear cuenta. 
+
+
+## Accounts Swagger UI
+
+Crear cuenta enlazando a un cliente.
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/createaccountcustomer.png" style="width:30%;" alt="TrasactionsImage">
+
+Transferir a cuenta.
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/transferto.png" style="width:30%;" alt="TrasactionsImage">
+
+Retirar de cuenta.
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/withdrawacc.png" style="width:30%;" alt="TrasactionsImage">
+
+Depositar a cuenta.
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/depositacc.png" style="width:30%;" alt="TrasactionsImage">
+
+Obtener cuenta por Id.
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/getaccountbyid.png" style="width:30%;" alt="TrasactionsImage">
+
+
+Obtener todas las transacciones de una cuenta por Id.
+<img src="https://raw.githubusercontent.com/DavidMrn/logic_app_bank/refs/heads/main/docs/images/gettransbyid.png" style="width:30%;" alt="TrasactionsImage">
+
